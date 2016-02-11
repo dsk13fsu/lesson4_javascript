@@ -1,0 +1,44 @@
+<html>
+<body>
+<script type="text/javascript">
+// Program name: textToNumbers.html
+// Purpose: Convert text input to numbers and finds the sum, product, average and modulus
+// Author: David Klein
+// Date: 2/05/16
+
+// Declare variables
+var num1, num2; // numbers entered by user
+var sum; // sum of a set of numbers
+var product; // product of a set numbers
+var average; // average of a set of munbers
+var modulus; //remainder of division 
+
+// Welcome the user
+document.write("Welcome! <br />");
+document.write("This program converts text to numbers,");
+document.write(" finds the sum, product, average and modulus and then displays the results.<br />");
+
+// Prompt the user for two numbers then convert the strings to integers
+num1 = prompt("Enter the first number:");
+num1 = parseInt(num1);
+num2 = prompt("Enter the second number:");
+num2 = parseInt(num2);
+
+// Add the numbers and display the sum
+sum = num1 + num2;
+document.write("<br />The SUM of the numbers is: " + sum + "<br />");
+//Complete this section - Multiply the numbers and display the product
+product = num1 * num2;
+document.write("<br />The PRODUCT of the numbers is: " + product + "<br />");
+// Complete this section - Find the average of the numbers and display average
+average = (num1 + num2)/2;
+document.write("<br />The AVERAGE of the numbers is: " + average + "<br />");
+// Complete this section - Find the modulus of the numbers and display the mod (remainder)
+modulus = num1 % num2
+document.write("<br />The MODULUS of the numbers is: " + modulus + "<br />");
+
+// Thank the user and end the program
+document.write("<br /> <b>Thank you! </b>");
+</script>
+</body>
+</html>
